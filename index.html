@@ -1,18 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anh Cu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">  
     <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
-        <!-- <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
-        <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
@@ -32,6 +30,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Nav Bar End -->
 
        <!-- Hero Start -->
@@ -43,13 +42,13 @@
                         <div class="hero-text">
                             <p>I'm</p>
                             <h1>Anh Cu </h1>
-                            <p>I'm a Web Developer</p>
-                            <!--come back for text word-->
-                            <!-- <div class="typed-text">And I'm a Web Developer</div> -->
                         </div>
+                        <div class="text-typing">
+                            <p>And I'm a Web Developer</p>
+                          </div>
                         <div class="hero-btn">
-                            <a class="btn" href="">Resume</a>
-                            <a class="btn" href="">Contact Me</a>
+                            <a class="btn" href="img/update resume.pdf">Resume</a>
+                            <a class="btn" href="mailto:anhcu714@gmail.com">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +63,7 @@
     <!-- Hero End -->
 
            <!-- About Start -->
-           <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+           <div class="about wow fadeInUp">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -73,16 +72,18 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="about-content">
+                        <div class="about-content" id="about">
                             <div class="section-header text-left">
-                                <h2><p>Get to know About Me</p></h2>
+                                <h2><p>Get to know A Little About Me</p></h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+                                    Hi! My name is Anh Cu. Currently, I’m enrolled at Georgia Tech as a Web Developer.  I am on track to graduate this October.  I can say that I am a very responsible and hard-working student.
                                 </p>
+                                <p>When I am not hunker down studying or learning new things about computer coding, I hang out with my family. I have 2 kids and a beautiful wife.</p>
+                                <p>My hobbies are Deep sea fishing and training for Strongman</p>
                             </div>
-                            <a class="btn" href="">Learn More</a>
+                            <!-- <a class="btn" href="">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -94,67 +95,67 @@
                  <div class="experience" id="experience">
                     <div class="container">
                         <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                            <p class="port">My Resume</p>
-                            <h2>Working Experience</h2>
+                            <!-- <p class="port">My Resume</p> -->
+                            <h2>Experience</h2>
                         </header>
                         <div class="timeline">
                             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div class="timeline-text">
+                                <div class="timeline-text" data-aos="fade-right">
+                                    <div class="timeline-date">2021</div>
+                                    <h2>Tech</h2>
+                                    <h4>Language</h4>
+                                    <p>
+                                        Respectable with JavaScript.  
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                                <div class="timeline-text" data-aos="fade-left">
+                                    <div class="timeline-date">2018 - 2019</div>
+                                    <h2>Tech</h2>
+                                    <h4>Language</h4>
+                                    <p>
+                                        Efficient with Node.js.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                                <div class="timeline-text" data-aos="fade-right">
+                                    <div class="timeline-date">2045 - 2050</div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                                <div class="timeline-text" data-aos="fade-left">
+                                    <div class="timeline-date">2045 - 2050</div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                                <div class="timeline-text" data-aos="fade-right">
                                     <div class="timeline-date">2021</div>
                                     <h2>GEORGIA TECH</h2>
-                                    <h4>Full Stack Student</h4>
+                                    <h4>Full Stack - Student</h4>
                                     <p>
-                                        Enroll at Georgia Tech to become a Full Stack Web Developer.  On track to graduate in October.  
+                                        Enroll at Georgia Tech to become a Full Stack Web Developer.  On track to graduate this October.
                                     </p>
                                 </div>
                             </div>
                             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div class="timeline-text">
+                                <div class="timeline-text" data-aos="fade-left">
                                     <div class="timeline-date">2018 - 2019</div>
                                     <h2>Colorado Tech University</h2>
-                                    <h4>General study</h4>
+                                    <h4>General study - Student</h4>
                                     <p>
                                         Took general courses at Colorado Tech. 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">2045 - 2050</div>
-                                    <h2>Web Developer</h2>
-                                    <h4>Soft Agency, San Francisco, CA</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">2045 - 2050</div>
-                                    <h2>Web Developer</h2>
-                                    <h4>Soft Agency, San Francisco, CA</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">2045 - 2050</div>
-                                    <h2>Web Developer</h2>
-                                    <h4>Soft Agency, San Francisco, CA</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">2045 - 2050</div>
-                                    <h2>Web Developer</h2>
-                                    <h4>Soft Agency, San Francisco, CA</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                                     </p>
                                 </div>
                             </div>
@@ -181,7 +182,7 @@
                                 <a class="btn" href="https://github.com/merewall/Toolin-Around" >+</a>                      
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>This application make it easier to find and borrow tools from your neighbors and neighborhood near by.</p>
                             </div>
                         </div>
                     </div>
@@ -191,11 +192,11 @@
                                 <img src="img/techBlog.png" alt="Image">
                             </div>
                             <div class="portfolio-text">
-                                <h3>Tecg Blog</h3>
+                                <h3>Tech Blog</h3>
                                 <a class="btn" href="https://github.com/anhcu/Tech-Blog" >+</a>
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>This web site is a great way to share your expertise while building a potentially valuable readership. It can help you share your projects, or provide guidance to other web users</p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +210,7 @@
                                 <a class="btn" href="https://github.com/anhcu/Business-Owner-Note-Taker">+</a>
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>Whether it's at the office during an important client conference call, at home or anywhere else, we have to jot down different types of notes and information on a routine basis.  Note Taker can help you with that.</p>
                             </div>
                         </div>
                     </div>
@@ -223,7 +224,7 @@
                                 <a class="btn" href="https://github.com/anhcu/Work-Day-Scheduler">+</a>
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>A simple calendar application that allows a user to save events for each hour of the day.</p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +238,7 @@
                                 <a class="btn" href="https://github.com/anhcu/E-Commerce-Back-End">+</a>
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>The backend is the part of an e-commerce site that users normally don't see. The backend is composed of servers, applications, and databases. It's responsible for organizing and storing data, and ensuring everything on the frontend operates smoothly.</p>
                             </div>
                         </div>
                     </div>
@@ -251,7 +252,7 @@
                                 <a class="btn" href="https://github.com/anhcu/Employee-Tracker">+</a>
                             </div>
                             <div>
-                                <p>We're making it easier to find and borrow tools from your neighbors!</p>
+                                <p>An employee tracking application can help employers keep their staff’s performance at the highest level.</p>
                             </div>
                         </div>
                     </div>
@@ -261,32 +262,29 @@
         <!-- Portfolio End -->
 
         <!-- Skills -->
-        <div class="skill">
+        <div class="skill" >
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s"> 
-                    <p>Skills</p> 
-                    <h2>Skills proficient at...</h2>
-                    <ul class="skills">
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                        <li>MVC</li>
-                        <li>Database</li>
-                        <li>JQuery</li>
-                    </ul>
-                </div>
+                <div class="section-header text-center wow zoomIn" data-aos="fade-left"> 
+                    <!-- <p>Skills</p>  -->
+                    <h2>Proficient language</h2>
+                    <div class="wrapper">
+                        <p class="line__1">| CSS | HTML | Database | SQL |</p>
+                        <p class="line__2">| JavaScript | MVC | JQuery |</p>
+                      </div>                 
+                </div>  
+            </div>
         </div>
+
+
 
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="container-fluid">
-                <div class="container">
+                <div class="container" id="contact">
                     <div class="footer-info">
                         <h2>Anh Cu</h2>
                         <h3>934 Willivee Dr, Decatur GA</h3>
                         <div class="footer-menu">
-                            <p>(404) 518 - 3986</p>
                             <p>Anhcu714@gmail.com</p>
                         </div>
                         <div class="footer-social">
@@ -298,6 +296,11 @@
             </div>
         </div>
         <!-- Footer End -->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     
 </body>
 </html>

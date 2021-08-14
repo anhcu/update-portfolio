@@ -129,7 +129,7 @@ a:focus {
     color: #414141;
 }
 
-/**********************************/
+/* ********************************
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
@@ -235,7 +235,7 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     }
-}
+} 
 
 /*******************************/
 /********** Hero CSS ***********/
@@ -328,6 +328,41 @@ a:focus {
 .hero .hero-btn .btn:first-child {
     margin-right: 10px;
 }
+
+/* body {
+    margin:0px;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#ddd;
+  } */
+  .text-typing {
+    padding:20px 30px;
+    background:#f5f5f5;
+    font-size:35px;
+    font-family:monospace;
+    border-radius:50px;
+  }
+  .text-typing p {
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 3s steps(20,end) forwards,
+              blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #222;
+    }
+  }
 
 @media (max-width: 991.98px) {
     .hero {
@@ -445,42 +480,6 @@ a:focus {
 
 .about .about-text p {
     font-size: 16px;
-}
-
-.about .skills {
-    margin-bottom: 30px;
-}
-
-.about .skill-name {
-    margin-top: 15px;
-}
-
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
-}
-
-.about .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
-}
-
-.about .progress .progress-bar {
-    width: 0px;
-    background: #EF233C;
-    border-radius: 10px;
-    transition: 2s;
-}
-
-.about .about-text a.btn {
-    margin-top: 15px;
 }
 
 @media (max-width: 991.98px) {
@@ -675,6 +674,85 @@ a:focus {
 .skill{
     margin-top: 160px;
 }
+
+/* html {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: #00cc44;
+  font-family: "Major Mono Display", monospace;
+} */
+
+.wrapper {
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.line__1,
+.line__2 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.line__1 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(30, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(30, end) infinite;
+}
+
+.line__2 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 5s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(30, end) infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 34rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32rem;
+  }
+}
+
 
 /*******************************/
 /******** Portfolio CSS ********/

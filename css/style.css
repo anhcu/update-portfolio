@@ -3,7 +3,7 @@
 /*******************************/
 body {
     color: #797979;
-    background: rgb(181, 212, 239);
+    background: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -954,7 +954,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: rgb(134,61,79)
+    background: #EF233C;
 }
 
 .footer .container-fluid {
@@ -1007,6 +1007,7 @@ a:focus {
 
 .footer .footer-social a {
     display: inline-block;
+    font-size: 60px;
 }
 
 .footer .footer-social a i {

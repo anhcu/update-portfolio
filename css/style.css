@@ -3,9 +3,29 @@
 /*******************************/
 body {
     color: #797979;
-    background: white;
+    /* background: #D3D3D3; */
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    background-color: #f2f2f2;
 }
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+:root{
+  --light:#f1f1f1;
+  --white:#fff;
+  --dark:#000;
+  font-size: 10px;
+}
+
+
+/* body{
+    font-family: 'Montserrat', sans-serif; 
+      background-color: var(--light);
+} */
 
 h1,
 h2, 
@@ -132,132 +152,14 @@ a:focus {
 /* ********************************
 /*********** Nav Bar CSS **********/
 /**********************************/
-/* .navbar {
-    position: relative;
-    transition: .5s;
-    z-index: 999;
-}
-
-.navbar.nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-}
-
-.navbar .navbar-brand {
-    margin: 0;
-    font-size: 45px;
-    line-height: 0px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    transition: .5s;
-    
-}
-
-.navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 40px;
-}
-
-.navbar .dropdown-menu {
-    margin-top: 0;
-    border: 0;
-    border-radius: 0;
-    background: #f8f9fa;
-}
-
-@media (min-width: 992px) {
-    .navbar {
-        position: absolute;
-        width: 100%;
-        padding: 30px 60px;
-        background: transparent !important;
-        border-bottom: 1px dashed rgba(256, 256, 256, .2);
-        z-index: 9;
-    }
-    
-    .navbar.nav-sticky {
-        padding: 10px 60px;
-        background: #ffffff !important;
-    }
-    
-    .navbar .navbar-brand {
-        color: #ffffff;
-    }
-    
-    .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
-    }
-
-    .navbar-light .navbar-nav .nav-link,
-    .navbar-light .navbar-nav .nav-link:focus {
-        padding: 10px 10px 8px 10px;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    
-    .navbar-light.nav-sticky .navbar-nav .nav-link,
-    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
-    }
-    
-    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
-    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
-    }
-}
-
-@media (max-width: 991.98px) {   
-    .navbar {
-        padding: 15px;
-        background: #ffffff !important;
-    }
-    
-    .navbar .navbar-brand {
-        color: #EF233C;
-    }
-    
-    .navbar .navbar-nav {
-        margin-top: 15px;
-    }
-    
-    .navbar a.nav-link {
-        padding: 5px;
-    }
-    
-    .navbar .dropdown-menu {
-        box-shadow: none;
-    }
-}  */
-
-
-:root {
-	font-size: 10px;
-}
-
-/* *,
-*::before,
-*::after {
-	box-sizing: border-box;
-} */
-
-
-
 
 /* body {
 	min-height: 100vh;
 	background-color: #fafafa;
 } */
-.homepage .container{
+/* .homepage .container{
     background-color: pink;
-}
+} */
 
 .container {
 	position: relative;
@@ -458,40 +360,33 @@ nav .icon-burger .line {
     margin-right: 10px;
 }
 
-/* body {
-    margin:0px;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#ddd;
-  } */
-  .text-typing {
-    padding:20px 30px;
-    background:#f5f5f5;
-    font-size:35px;
-    font-family:monospace;
-    border-radius:50px;
-  }
-  .text-typing p {
-    margin:0px;
-    white-space:nowrap;
-    overflow:hidden;
-    animation:typing 3s steps(20,end) forwards,
-              blink 1s infinite;
-  }
-  @keyframes typing {
-    0% { width:0% }
-    100% { width:100% }
-  }
-  @keyframes blink {
-    0%,100% {
-      border-right:2px solid transparent;
-    }
-    50% {
-      border-right:2px solid #222;
-    }
-  }
+
+.text-typing {
+padding:20px 30px;
+background:#f5f5f5;
+font-size:35px;
+font-family:monospace;
+border-radius:50px;
+}
+.text-typing p {
+margin:0px;
+white-space:nowrap;
+overflow:hidden;
+animation:typing 3s steps(20,end) forwards,
+            blink 1s infinite;
+}
+@keyframes typing {
+0% { width:0% }
+100% { width:100% }
+}
+@keyframes blink {
+0%,100% {
+    border-right:2px solid transparent;
+}
+50% {
+    border-right:2px solid #222;
+}
+}
 
 @media (max-width: 991.98px) {
     .hero {
@@ -577,49 +472,97 @@ nav .icon-burger .line {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
-.about {
-    position: relative;
+
+img{
     width: 100%;
-    margin: -45px 0 45px 0;
+    height: auto;
 }
-
-.about .col-lg-6 {
-    padding: 0;
-}
-
-.about .section-header {
-    margin-bottom: 30px;
-}
-
-.about .about-img {
-    position: relative;
-    height: 100%;
-}
-
-.about .about-img img {
-    position: relative;
+.wrapper{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
+}
+.profile-card{
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow:  0px 0px 18px #ccc;
+}
+.profile-card .profile-header{
+    height: 180px;
 }
 
-.about .about-content {
-    padding: 0 60px;
+.profile-card .profile-body{
+    background-color: var(--white);
+    padding: 20px 40px 40px 40px;
 }
 
-.about .about-text p {
-    font-size: 16px;
+.profile-card .profile-body .author-img{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.profile-card .profile-body .author-img img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; 
+    padding: 5px;
+    background-color: var(--white);
 }
 
-@media (max-width: 991.98px) {
-    .about .about-content {
-        padding: 45px 15px 0 15px;
-    }
+.profile-card .profile-body .name{
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+
 }
+.profile-card .profile-body .intro{
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.6;
+   margin: 20px  0px 30px  0px;
+
+}
+ .social-icon ul {
+    list-style-type: none;
+}
+ .social-icon ul li {
+    display: inline-block;
+}
+ .social-icon ul li a {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  border:1px solid #ddd;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+ }
+ .social-icon ul{
+  margin:0;
+   padding:0;
+}
+ .social-icon ul li a:hover {
+  background-color: var(--red);
+  border:1px solid var(--red);
+ }
+  .social-icon ul li a i{
+   line-height: 35px;
+   color:#666;
+  }
+  .social-icon ul li a i:hover,
+    .social-icon ul li a:hover i{
+ 
+   color:var(--white);
+  }
 
 /*******************************/
 /******* Experience CSS ********/
 /*******************************/
+/* .resume{
+    font-size: 50px;
+    color: rgba(239, 35, 60, .95);
+} */
+
 .experience {
     position: relative;
     padding: 45px 0 15px 0;
@@ -646,17 +589,20 @@ nav .icon-burger .line {
     background: inherit;
     width: 50%;
     margin-bottom: 30px;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    
+    
 }
 
 .experience .timeline .timeline-item.left {
     left: 0;
     padding-right: 30px;
+    
 }
 
 .experience .timeline .timeline-item.right {
     left: 50%;
     padding-left: 30px;
+    
 }
 
 .experience .timeline .timeline-item::after {
@@ -674,6 +620,7 @@ nav .icon-burger .line {
 
 .experience .timeline .timeline-item.right::after {
     left: -8px;
+    
 }
 
 .experience .timeline .timeline-item::before {
@@ -730,8 +677,10 @@ nav .icon-burger .line {
 
 .experience .timeline .timeline-text h2 {
     margin: 0 0 5px 0;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 600;
+    color: rgba(239, 35, 60, .95);
+    font-style: italic;
 }
 
 .experience .timeline .timeline-text h4 {
@@ -881,7 +830,7 @@ nav .icon-burger .line {
   to {
     width: 32rem;
   }
-}
+} */
 
 
 /*******************************/
@@ -934,6 +883,15 @@ nav .icon-burger .line {
     position: relative;
 }
 
+.portfolio-wrap .info-git{
+    color:rgba(239, 35, 60, .95);
+    font-size: 13px;
+}
+
+.portfolio-wrap .info-about p{
+    font-size: 15px;
+}
+
 .portfolio .portfolio-wrap {
     position: relative;
     width: 100%;
@@ -971,7 +929,7 @@ nav .icon-burger .line {
 
 .portfolio .portfolio-text h3 {
     width: calc(100% - 70px);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 0 15px;
     white-space: nowrap;
@@ -999,7 +957,7 @@ nav .icon-burger .line {
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
-.contact {
+/* .contact {
     position: relative;
     width: 100%;
     margin: 45px 0;
@@ -1067,7 +1025,7 @@ nav .icon-burger .line {
     font-size: 14px;
     font-style: italic;
     color: #ffffff;
-}
+} */
 
 @media (max-width: 767.98px) {
     .contact .container-fluid {
@@ -1088,8 +1046,10 @@ nav .icon-burger .line {
     background: #EF233C;
 }
 
-.footer .container-fluid {
-    padding: 60px 0 0 0;
+.footer-contact a{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .footer .footer-info {
@@ -1141,57 +1101,6 @@ nav .icon-burger .line {
     font-size: 60px;
 }
 
-.footer .footer-social a i {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #ffffff;
-    transition: .3s;
-}
-
-.footer .footer-social a:last-child i {
-    margin: 0;
-}
-
-.footer .footer-social a:hover i {
-    color: #414141;
-}
-
-.footer .copyright {
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.footer .copyright::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 1px;
-    top: 0;
-    left: 25%;
-    background: rgba(256, 256, 256, .2);
-}
-
-.footer .copyright p {
-    margin: 0;
-    color: #ffffff;
-}
-
-.footer .copyright .col-md-6:last-child p {
-    text-align: right;
-}
-
-.footer .copyright p a {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.footer .copyright p a:hover {
-    color: #414141;
-}
-
 @media (max-width: 575.98px) {
     .footer .footer-info h2 {
         margin-bottom: 20px;
@@ -1210,3 +1119,10 @@ nav .icon-burger .line {
         padding: 0 5px;
     }
 } 
+
+@media screen and (max-width: 768px) {
+    .text-typing {
+      font-size: 6vw;
+      text-align: center;
+    }
+  }

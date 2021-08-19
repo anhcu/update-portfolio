@@ -6,9 +6,16 @@
 # Description
 An updated portfolio showcasing my incredibles work thus far.  
 
-## Usage
-#### Deployed App
-http://127.0.0.1:5501/index.html
+## Contact 
+If you have and question or want to reach out to me please [contact me](https://github.com/anhcu) here.
+## Link
+[Deployed application](https://anhcu.github.io/update-portfolio/) <br>
+[Github Repo](https://github.com/anhcu/update-portfolio)
+
 ![update](./img/update.png)
+![bio](./img/bio.png)
+![experience](./img/experience.png)
+![work](./img/work.png)
+![contact](./img/contact.png)
 
 
